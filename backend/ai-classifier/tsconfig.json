@@ -1,11 +1,13 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
-  "extends": "../../tsconfig.json",
+  // "extends": "../../tsconfig.json",
   "compilerOptions": {
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
-
+    "paths": {
+      "@shared/models": ["../../shared/models/index.ts"]
+    },
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "NodeNext",
@@ -42,6 +44,6 @@
     "moduleDetection": "force",
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
-  },
-  "include": ["src"]
+  }
+  // "include": ["src"]
 }

@@ -2,7 +2,7 @@
   "name": "ai-classifier",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "dev": "nodemon src/index.ts"
   },
@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "dependencies": {
+    "@shared/models": "*"
+  },
   "devDependencies": {
     "nodemon": "^3.1.14",
     "ts-node": "^10.9.2",
